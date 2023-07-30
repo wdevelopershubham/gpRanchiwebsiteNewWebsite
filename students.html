@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student's Corner</title>
+    <link rel="stylesheet" href="students.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Student's Corner</h1>
+    </header>
+
+    <main>
+        <section class="content">
+            <!-- Your student's corner content goes here -->
+            <h2>Welcome to the Student's Corner!</h2>
+            <p>This section is dedicated to all the students seeking knowledge and fun.</p>
+            <p>Feel free to explore and enjoy various resources we've prepared for you.</p>
+            <button onclick="showResources()">Show Resources</button>
+            <div id="resources" class="hidden">
+                <ul>
+                    <li><a class="a" href="#">Study Materials</a></li>
+                    <li><a class="a" href="#">Educational Videos</a></li>
+                    <li><a class="a" href="">Our Courses</a></li>
+                    <li><a class="a" href="">Student Forum</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <div class="container">
+        <div class="box">
+            <div class="icon">01</div>
+            <div class="contents">
+                <h3>Our Syllabus</h3>
+                <ul>
+                    <li>Computer Science</li><a class="a" href="https://jutranchi.ac.in/?page_id=221" target="_blank">Download</a>
+                    <li>Electrical Engineering</li><a  class="a" href="https://jutranchi.ac.in/?page_id=221" target="_blank">Download</a>
+                    <li>Civil Engineering</li><a class="a" href="https://jutranchi.ac.in/?page_id=221" target="_blank">Download</a>
+                    <li>Mechanical Engineering</li><a class="a"  href="https://jutranchi.ac.in/?page_id=221" target="_blank">Download</a>
+                    <li>Electronics And Comm. Engineering</li><a class="a" href="https://jutranchi.ac.in/?page_id=221" target="_blank">Download</a>
+                </ul>
+                
+            </div>
+        </div>
+        <div class="box">
+            <div class="icon">02</div>
+            <div class="contents">
+                <h3>Previous Year Questions</h3>
+                <ul>
+                    <li>Computer Science</li> <a class="a" href="">Click Here</a>
+                    <li>Electrical Engineering</li> <a class="a" href="">Click Here</a>
+                    <li>Civil Engineering</li> <a class="a" href="">Click Here</a>
+                    <li>Mechanical Engineering</li> <a class="a" href="">Click Here</a>
+                    <li>Electronics And Comm. Engineering</li> <a class="a"  href="">Click Here</a>
+                </ul>
+               
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" id="contactus">
+        <div class="containers">
+            <div class="rows">
+                <div class="footer-col">
+                    <h4>G.P Ranchi</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">about us</a></li>
+                        <li><a href="index.html#courses">our Courses</a></li>
+                        <li><a href="index.html#facilities">Facilities</a></li>
+                        <li><a href="index.html#notice">Notice</a></li>
+                        <li><a href="index.html#gallery">Gallery</a></li>
+                        <li><a href="index.html#our">Our Placement Partners</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="https://jutranchi.ac.in/" target="_blank">JUT</a></li>
+                        <li><a href="https://jutgyanjyoti.jharkhand.gov.in/" target="_blank">Gyan Jyoti</a></li>
+                        <li><a href="https://ekalyan.cgg.gov.in/" target="_blank">E-Kalyan</a></li>
+                        <li><a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm" target="_blank">SBI-Collect</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><a href="">Opp Barnabas Hospital, Church Road, Ranchi-834001</a></li>
+                        <li><a href="">govt_polytechnic_ranchi_@yahoo.co.in</a></li>
+                        <li><a href="">0651-23512990</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Developers</h4>
+                    <ul>
+                        <li><a href="https://wdeveloperfluid.w3spaces.com" target="_blank">Shubham</a></li>
+                        <li><a href="https://aadilhassan.tech" target="_blank">Aadil Hassan</a></li>
+
+                        <li><a href="">Priyanshu Ghosh</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script>
+        function showResources() {
+    const resourcesDiv = document.getElementById("resources");
+    resourcesDiv.classList.toggle("hidden");
+}
+
+    </script>
+</body>
+</html>
