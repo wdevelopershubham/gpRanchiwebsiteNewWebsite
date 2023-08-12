@@ -17,6 +17,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+
+    <script>
+        $(document).bind("contextmenu",function(e) {
+        e.preventDefault();
+       });
+       $(document).keydown(function(e){
+    if(e.which === 123){
+       return false;
+    }
+
+
+
+});
+
+// Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+
+
+       </script>
 </head>
 
 <body>
@@ -39,7 +74,7 @@
     <!-- <div class="container-fluid banner top"> -->
     <div class="container1">
         <div>
-            <img width="80" src="gpranchipng.png" alt="">
+            <img width="110" src="gpranchipng.png" alt="">
         </div>
         <center>
             <div style="max-width: 50vw;
@@ -48,12 +83,13 @@
             display: flex;
             flex-direction: column;">
                 <h2 style="text-transform: uppercase;">Government Polytechnic Ranchi</h2>
-                <h6>Department of Higher, Technical Education & Skill Development, Govt. of Jharkhand</h6>
+                <h6>Department of Higher & Technical Education, Govt. of Jharkhand</h6>
+                <h6>Approved by AICTE,Govt. of India Affiliated to JUT,Jharkhand</h6>
                 <h6 class="s2">Opp Barnabas Hospital, Church Road, Ranchi-834001</h6>
             </div>
         </center>
         <div>
-            <img width="80" src="jhargov.png" alt="">
+            <img width="110" src="jhargov.png" alt="">
         </div>
     </div>
     <!-- <div class="row alone"> -->
@@ -95,6 +131,12 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About us</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="EOA-Report-2023-24 (3).PDF">AICTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Letter No. 1184   Date 31.07.2023 (1).pdf">JUT</a>
+                    </li>
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#courses" role="button" data-bs-toggle="dropdown"
@@ -102,9 +144,9 @@
                             Courses
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="cse.html">C.S.E</a></li>
-                            <li><a class="dropdown-item" href="ece.html">Ece</a></li>
-                            <li><a class="dropdown-item" href="elect.html">E.T</a></li>
+                            <li><a class="dropdown-item" href="cse.html">CSE</a></li>
+                            <li><a class="dropdown-item" href="ece.html">ECE</a></li>
+                            <li><a class="dropdown-item" href="elect.html">EE</a></li>
                             <li><a class="dropdown-item" href="civil.html">Civil</a></li>
                             <li><a class="dropdown-item" href="mech.html">Mech</a></li>
                         </ul>
@@ -113,7 +155,7 @@
                         <a class="nav-link" href="#facilities">Facilities</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#faculties">Faculties</a>
+                        <a class="nav-link" href="faculties.html">Faculties</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#notice">Notice</a>
@@ -141,26 +183,36 @@
     <div id="carouselExampleAutoplaying home" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item">
-             
-                <img class="d-block w-100" src="/anti-ragging.jpg" alt="First slide">
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                    xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide"
+                    preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <title>Placeholder</title>
+                   <rect width="100%" height="100%">   </rect> 
+                    <img  src="/anti-ragging.jpg" width="100%" height="100%" />
+                    <text x="50%" y="50%" fill="#555"
+                        dy=".3em">first</text>
+                </svg> -->
+                <img class="d-block w-100" src="Slider2.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide"
                     preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#666"></rect><text x="50%" y="50%" fill="#444"
                         dy=".3em">second</text>
-                </svg>
+                </svg> -->
+                <img class="d-block w-100" src="front view .jpg" alt="First slide">
             </div>
             <div class="carousel-item active">
-                <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
+                <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400"
                     xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Third slide"
                     preserveAspectRatio="xMidYMid slice" focusable="false">
                     <title>Placeholder</title>
                     <rect width="100%" height="100%" fill="#555"></rect><text x="50%" y="50%" fill="#333"
                         dy=".3em">third</text>
-                </svg>
+                </svg> -->
+                <img class="d-block w-100" src="Slider.jpg" alt="First slide">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -182,13 +234,13 @@
                     <div style="min-width: 200px; margin: 10px;">
                         <center>
                             <img src="gpranchiprincipal.jpg" alt="">
-                            <div><b>Sneh Kumar (principle)</b></div>
+                            <div><b>Sneh Kumar (principal)</b></div>
                         </center>
 
                     </div>
                     <div style="min-width: 200px;  width: 300px;margin: 10px;">
                         <div class="p-msg">
-                            <h2>Principle Message</h2>
+                            <h2>Principal Message</h2>
                         </div>
                         <p>This is the era of liberalization, privatization and globalization. The need of the hour is
                             training individuals in dynamic way and make them to face different challenges thrown up by
@@ -207,13 +259,13 @@
 
 
                     <h2>About Institute</h2>
-                    <p>The college is established in year 1954.
-                        College is situated in the heart of the city. College is known for its culture and alumini.
-                        Passout students of government polytechnic ranchi are well established in government and private
-                        sectors. College is AICTE aproved and JUT affilated . electrical mechanical electronics and
-                        communication , cse and civil engineering are 5 diploma courses are running in the college
-                        Aicte approve intake is 60 per branches. College is well known for its infrastructure
-                        labs and discipline.</p>
+                    <p>Government Polytechnic College of Ranchi (Jharkhand) is a prestigious institution spreaded in ....... of land at the
+                    heart of the city, established in 1954, is known for its academic excellence with a wide range of Engineering programs
+                    that is CSE, ECE, EE, Mechanical and civil, Experienced faculty, unparallel infrastructure and Emphasis to inspire and
+                    unlock creativity with liberating technology, the strong focus on technical and soft skills training to enhance
+                    employability of students. The college provide a comprehensive education. It also offers a vibrant campus life,
+                    encouraging extracurricular activities and interactions with different quarters of the society that helps in shaping
+                    students into competent professionals.</p>
 
                 </div>
 
@@ -224,7 +276,7 @@
 
     </div>
 
-<!-- 
+    <!-- 
     <div class="courses-box">
         <div class="courses boxxshadow2" id="courses">
             <h2 class="for-gallery">OUR COURSES</h2>
@@ -254,7 +306,7 @@
                  <button type="button" class="btn btn-secondary">Syllabus</button> -->
 
 
-<!-- 
+    <!-- 
                 </div>
 
 
@@ -354,7 +406,7 @@
 
 
 
-      <div class="dono">
+    <div class="dono">
         <div class="form  none shadow p-3 rounded" style="width: 500px; min-width: 300px; max-width: 100vw;">
             <h2>Make An Enquiry</h2>
             <hr>
@@ -393,18 +445,18 @@
                     <marquee direction="up" behaviour="scroll" Scrollamount="5" style="height: 400px;">
                         <div class="event-list">
                             <div class="event-date">
-                                <p>Feburary</p>
-                                <h4>28</h4>
+                                01-01-2023</i>
+
                             </div>
                             <div class="event-content">
                                 <p>National Science Day</p>
                                 <h3>Science Week of 8 Days</h3>
                             </div>
+
                         </div>
                         <div class="event-list">
                             <div class="event-date">
-                                <p>Feburary</p>
-                                <h4>28</h4>
+                                01-01-2023</i>
                             </div>
                             <div class="event-content">
                                 <p>National Science Day</p>
@@ -413,8 +465,7 @@
                         </div>
                         <div class="event-list">
                             <div class="event-date">
-                                <p>Feburary</p>
-                                <h4>28</h4>
+                                01-01-2023</i>
                             </div>
                             <div class="event-content">
                                 <p>National Science Day</p>
@@ -423,18 +474,16 @@
                         </div>
                         <div class="event-list">
                             <div class="event-date">
-                                <p>Feburary</p>
-                                <h4>28</h4>
+                                01-01-2023</i>
                             </div>
                             <div class="event-content">
                                 <p>National Science Day</p>
-                                <h3>Science Week of  Days</h3>
+                                <h3>Science Week of Days</h3>
                             </div>
                         </div>
                         <div class="event-list">
                             <div class="event-date">
-                                <p>Feburary</p>
-                                <h4>28</h4>
+                                01-01-2023</i>
                             </div>
                             <div class="event-content">
                                 <p>National Science Day</p>
@@ -457,142 +506,138 @@
         <div class="OURCOURCESCONTAINERBIG">
             <div class="ourCourcesChild" id="library">
                 <div style="min-width: 200px; max-width: 70vw; width: 200px;padding: 20px; margin: 20px;">
-    
-                    <img width="200px" height="120px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YeUi3pubKyo3OJRffCLuoM5Vv5Rgt-1fyw&usqp=CAU"
-                        alt="">
+
+                    <img width="200px" height="120px" src="library.jpg" alt="">
                     <div>
                         <h3>Library</h3>
                     </div>
                 </div>
                 <div style="min-width: 200px; max-width: 70vw;padding: 20px; margin: 20px;">
-                    The library offers a range of space for study. You will find the beautiful library reading room and an open
-                    study area , and our bright and modern library is a flexible study space arranged for you to work in a way
+                    The library offers a range of space for study. You will find the beautiful library reading room and
+                    an open
+                    study area , and our bright and modern library is a flexible study space arranged for you to work in
+                    a way
                     that suits you.
                 </div>
-    
-    
+
+
             </div>
             <div class="ourCourcesChild" id="Hostel">
                 <div style="min-width: 200px; max-width: 70vw; width: 200px;padding: 20px; margin: 20px;">
-    
-                    <img width="200px" height="120px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YeUi3pubKyo3OJRffCLuoM5Vv5Rgt-1fyw&usqp=CAU"
-                        alt="">
+
+                    <img width="200px" height="120px" src="front view .jpg" alt="">
                     <div>
                         <h3>Hostel</h3>
                     </div>
                 </div>
                 <div style="min-width: 200px; max-width: 70vw;padding: 20px; margin: 20px;">
-                    The College Hostel, located within the college campus, consists of two blocks, one each for boys and girls.
+                    The College Hostel, located within the college campus, consists of two blocks, one each for boys and
+                    girls.
                     It is a residence hostel for students admitted to Govt. Polytechnic Ranchi.
-              
+
                 </div>
-    
-    
+
+
             </div>
             <div class="ourCourcesChild" id="Computer lab">
                 <div style="min-width: 200px; max-width: 70vw; width: 200px;padding: 20px; margin: 20px;">
-    
-                    <img width="200px" height="120px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YeUi3pubKyo3OJRffCLuoM5Vv5Rgt-1fyw&usqp=CAU"
-                        alt="">
+
+                    <img width="200px" height="120px" src="lab.jpg" alt="">
                     <div>
                         <h3>Computer lab</h3>
                     </div>
                 </div>
                 <div style="min-width: 200px; max-width: 70vw;padding: 20px; margin: 20px;">
                     MODERN COMPUTER LABS
-                    The computer centre of this institute boasts of being called upon “The gateway across the globe”. With over
-                    200 computers, ready to take the students across the geographical boundaries of the land at a speed of
+                    The computer centre of this institute boasts of being called upon “The gateway across the globe”.
+                    With over
+                    200 computers, ready to take the students across the geographical boundaries of the land at a speed
+                    of
                     10Mbps dedicated internet leased line.
                 </div>
-    
-    
+
+
             </div>
             <div class="ourCourcesChild" id="Wifi">
                 <div style="min-width: 200px; max-width: 70vw; width: 200px;padding: 20px; margin: 20px;">
-    
-                    <img width="200px" height="120px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YeUi3pubKyo3OJRffCLuoM5Vv5Rgt-1fyw&usqp=CAU"
-                        alt="">
+
+                    <img width="200px" height="120px" src="wifi.jpg" alt="">
                     <div>
-                        <h3>Wifi campus</h3>
+                        <h3>Wi-fi campus</h3>
                     </div>
                 </div>
                 <div style="min-width: 200px; max-width: 70vw;padding: 20px; margin: 20px;">
-                    The entire campus is Wi-fi enabled with high speed internet connection to allow the students to access the
-            internet no-matter wherever they are. The coverage is not just limited to the classrooms, instead it extends
-            to all the facilities within the campus premises.
+                    The entire campus is Wi-fi enabled with high speed internet connection to allow the students to
+                    access the
+                    internet no-matter wherever they are. The coverage is not just limited to the classrooms, instead it
+                    extends
+                    to all the facilities within the campus premises.
                 </div>
-    
-    
+
+
             </div>
 
 
             <div class="ourCourcesChild" id="Wifi">
                 <div style="min-width: 200px; max-width: 70vw; width: 200px;padding: 20px; margin: 20px;">
-    
-                    <img width="200px" height="120px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YeUi3pubKyo3OJRffCLuoM5Vv5Rgt-1fyw&usqp=CAU"
-                        alt="">
+
+                    <img width="200px" height="120px" src="confrenceroom.jpg" alt="">
                     <div>
-                        <h3>Confrence Room</h3>
+                        <h3> Conference Room</h3>
                     </div>
                 </div>
                 <div style="min-width: 200px; max-width: 70vw;padding: 20px; margin: 20px;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat temporibus expedita in eaque ad eos
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat temporibus expedita in eaque
+                    ad eos
                     animi sapiente doloribus est totam unde facilis, nulla ex quidem vero. Voluptatem, atque molestiae.
-              
+
                 </div>
-    
-    
+
+
             </div>
 
             <div class="ourCourcesChild" id="Reading Room">
                 <div style="min-width: 200px; max-width: 70vw; width: 200px;padding: 20px; margin: 20px;">
-    
-                    <img width="200px" height="120px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YeUi3pubKyo3OJRffCLuoM5Vv5Rgt-1fyw&usqp=CAU"
-                        alt="">
+
+                    <img width="200px" height="120px" src="confrenceroom.jpg" alt="">
                     <div>
                         <h3>Reading Room</h3>
                     </div>
                 </div>
                 <div style="min-width: 200px; max-width: 70vw;padding: 20px; margin: 20px;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat temporibus expedita in eaque ad eos
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat temporibus expedita in eaque
+                    ad eos
                     animi sapiente doloribus est totam unde facilis, nulla ex quidem vero. Voluptatem, atque molestiae.
-              
+
                 </div>
-    
-    
+
+
             </div>
 
             <div class="ourCourcesChild" id="Solar Power">
                 <div style="min-width: 200px; max-width: 70vw; width: 200px;padding: 20px; margin: 20px;">
-    
-                    <img width="200px" height="120px"
-                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YeUi3pubKyo3OJRffCLuoM5Vv5Rgt-1fyw&usqp=CAU"
-                        alt="">
+
+                    <img width="200px" height="120px" src="solarimg.jpeg" alt="">
                     <div>
                         <h3>Solar Power</h3>
                     </div>
                 </div>
                 <div style="min-width: 200px; max-width: 70vw;padding: 20px; margin: 20px;">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat temporibus expedita in eaque ad eos
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae fugiat temporibus expedita in eaque
+                    ad eos
                     animi sapiente doloribus est totam unde facilis, nulla ex quidem vero. Voluptatem, atque molestiae.
-              
+
                 </div>
-    
-    
-            </div>
-            </div>
 
 
-       
-      
-     
-       
+            </div>
+        </div>
+
+
+
+
+
+
         <hr class="end-fac">
     </div>
 
@@ -635,25 +680,25 @@
     </div>
     <div class="photo-gallery">
         <div class="pic place">
-            <img src="gallery1.jpg" class="imgg">
+            <img src="lab.jpg" class="imgg">
         </div>
         <div class="pic collage">
-            <img src="gallery2.jpg" class="imgg">
+            <img src="library.jpg" class="imgg">
         </div>
         <div class="pic teachers">
-            <img src="gallery3.jpg" class="imgg">
+            <img src="front view .jpg" class="imgg">
         </div>
         <div class="pic place">
-            <img src="gallery4.jpg" class="imgg">
+            <img src="IMG_20230721_144538714.jpg" class="imgg">
         </div>
         <div class="pic collage">
-            <img src="gallery5.jpg" class="imgg">
+            <img src="newimg.jpg" class="imgg">
         </div>
         <div class="pic teachers ">
-            <img src="gallery6.jpg" class="imgg">
+            <img src="IMG_20230721_145104379_HDR.jpg" class="imgg">
         </div>
         <div class="pic place">
-            <img src="gallery7.jpg" class="imgg">
+            <img src="IMG_20230721_145622626.jpg" class="imgg">
         </div>
     </div>
     </div>
@@ -718,7 +763,7 @@
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="about.html">about us</a></li>
-                        <li><a href="#courses">our Courses</a></li>
+                        <li><a href="cse.html">our Courses</a></li>
                         <li><a href="#facilities">Facilities</a></li>
                         <li><a href="#notice">Notice</a></li>
                         <li><a href="#gallery">Gallery</a></li>
@@ -751,13 +796,21 @@
                     <ul>
                         <li><a href="">Amit kumar Das</a></li>
                         <li><a href="https://wdeveloperfluid.w3spaces.com" target="_blank">Shubham</a></li>
-                        <li><a href="https://aadilhassan.tech" target="_blank">Aadil Hassan</a></li>
+                        <li><a href="https://github.com/aadilhassan" target="_blank">Aadil Hassan</a></li>
 
                         <li><a href="">Priyanshu Ghosh</a></li>
 
                     </ul>
                 </div>
             </div>
+
+<div style="margin-left: 50px;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1485.3897518439344!2d85.33117325225955!3d23.36129271837357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f4e10a9c12dc63%3A0xd2e2568cdf7a0c6c!2sGovernment%20Polytechnic%20Ranchi!5e0!3m2!1sen!2sin!4v1691849096388!5m2!1sen!2sin" width="50%" height="250px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+
+            <div style="color:#fff;margin-left:50px" class="rights">
+                <p style="color:#fff">© 2021 Government Polytechnic Ranchi | All Rights Reserved.</p>
+
         </div>
         </div>
     </footer>
