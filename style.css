@@ -305,12 +305,10 @@ background: #7387eb;
   
   }
   .event-date{
-      width: 80px;
+      
       float: left;
       text-align: center;
-      background: #7387eb;
-      background: -webkit-linear-gradient(to right, #29323c, #485563);
-      background: linear-gradient(to right, #29323c, #485563);
+      background: #dd1313;
       color: white;
       padding: 10px 10px;
       border-radius:  5px;
@@ -330,6 +328,9 @@ background: #7387eb;
       margin-left: 10px;
       margin-right: 15px;
   
+  }
+  .event-content p{
+    margin-bottom: 0;
   }
 .main-sec{
  /* margin-left: 100px;
@@ -361,10 +362,6 @@ background: #7387eb;
     margin-top: 25px;
     border-radius: 9px;
     float: right;
-}
-body{
-  /* width: 100vw; */
-  /* height: 100vw; */
 }
 .common{
   display: flex;
@@ -1121,7 +1118,7 @@ background-color: #ffffff;
       .boxxshadow{
           display: flex;
           width: 100%;
-         ;
+        
       }
       .boxxshadow2{
           width: 100%;
@@ -1139,7 +1136,7 @@ background-color: #ffffff;
       .boxxshadow{
           display: flex;
   width: 100%;
-  }
+}
       .boxxshadow2{
           width: 120%;
           font-size: 1.7rem;
@@ -1194,3 +1191,33 @@ background-color: #ffffff;
     .p-3{
       padding: 1rem;
     }
+
+
+
+
+    /* Faculty */
+
+
+    
+    
+
+    .faculties-heading{
+      padding: 5px 0 5px 8px;
+        border-left: 5px solid #0060b1;
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+        margin-left: 25px;
+       
+    }
+
+    .sub-heading{
+          padding: 5px 0 5px 8px;
+            border-left: 5px solid #d11414;
+            font-weight: bold;
+            font-size: 16px;
+            text-transform: uppercase;
+            
+            color: #d11414;
+    }
+    
