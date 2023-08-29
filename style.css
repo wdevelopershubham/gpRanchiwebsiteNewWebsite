@@ -18,7 +18,33 @@ a:hover {
   text-decoration: none;
   color: white;
 }
-
+.btn-notice{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 0px;
+  color: #ffffff;
+  background-color:#d11414 ;
+  border-radius: 0.25vw ;
+}
+.btn-notice:hover{
+  background-color:#d11414af ;
+}
+.notice{
+  background: linear-gradient(to bottom left, rgb(245, 245, 161), rgb(241, 241, 196));
+  width: 100vw;
+  height: 100vh;
+}
+.a-notice{
+  text-decoration: none;
+}
+.heading{
+        padding: 5px 0 5px 8px;
+        border-left: 5px solid #0060b1;
+        font-weight: bold;
+        font-size: 22px;
+        text-transform: uppercase;
+       }
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f9f9f9;
